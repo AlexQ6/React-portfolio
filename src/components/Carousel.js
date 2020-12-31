@@ -1,0 +1,87 @@
+import React, { useState } from "react";
+
+import Card from "../components/Card";
+
+// import asdf from '../assets/images/asdf.png';
+import goalflix from "../assets/images/goalflix.PNG";
+import taskio from "../assets/images/taskio.JPG";
+import portfolio from "../assets/images/portfolio.PNG";
+
+
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+
+const Carousel = (props) => {
+    const [allItems, setAllItems] = useState([
+        {
+          id: 0,
+          title: "Taskio",
+          subTitle:
+            "A retro gaming themed task tracker and to do list.\nBuilt with a partner during a hackathon, we built a express JS app with authentication and authorisation.",
+          imgSrc: taskio,
+          link: "https://sleepy-falls-92191.herokuapp.com/home",
+          repoLink: "https://github.com/AlexQ6/express_hackathon",
+          selected: false,
+        },
+        {
+          id: 1,
+          title: "Goalflix",
+          subTitle:
+            "A place to see all your European football highlights.\nBuilt using vanilla JS, my partner and I utilised multiple APIs to create a entertainment hub.",
+          imgSrc: goalflix,
+          link: "https://goalflix.netlify.app/",
+          repoLink: "https://github.com/AlexQ6/Goalflix",
+          selected: false,
+        },
+        {
+          id: 2,
+          title: "Portfolio",
+          subTitle: "Personal portfolio website built using react JS",
+          imgSrc: portfolio,
+          link: "https://alexqiang.com",
+          repoLink: "",
+          selected: false,
+        },
+      ]);
+
+    const handleCardClick = (id, card) => {
+        let items = [...allItems];
+
+        items[id].selected = items[id].selected ? false : true;
+
+        items.forEach((item) => {
+            if (item.id !== id) {
+            item.selected = false;
+            }
+        });
+        setAllItems(
+            items,
+        );
+    };
+    
+    const makeItems = (items) => {
+        console.log(items);
+        return items.map((item) => {
+            return (
+            <Card
+                item={item}
+                click={(e) => handleCardClick(item.id, e)}
+                key={item.id}
+            />
+            );
+        });
+    };
+    
+      
+    return (
+        <Container fluid={true}>
+          <Row className="justify-content-around">
+              {makeItems(allItems)}
+          </Row>
+        </Container>
+    );
+      
+};
+
+
+export default Carousel;
