@@ -65,7 +65,9 @@ const App = (params) => {
         <Route path="/about" render={() => <AboutPage title={about.title} />} />
 
         <Footer />
+
       </Container>
+      
     </BrowserRouter>
   );
 };

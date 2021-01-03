@@ -6,15 +6,21 @@ import Col from 'react-bootstrap/Col';
 function Footer() {
 
     return(
-        <footer className="mt-5">
+        <footer className="fixed-bottom mt-5 bg-white">
             <Container fluid={true}>
                 <Row className="border-top justify-content-between p-3">
-                    <Col className="p-0" md={3} sm={12}>
+                    <Col className="p-0 " >
                         Alex Qiang
                     </Col>
-                    <Col className="p-0 d-flex justify-content-end" md={3}>
-                        This site was made by Alex Qiang.
+
+                    <Col className="p-0  text-center" >
+                        <a href="https://github.com/AlexQ6">GitHub</a>   
+                    </Col> 
+
+                    <Col className="p-0 d-flex justify-content-end" >
+                        <a href="https://www.linkedin.com/in/alex-qiang/">Linkedin</a>
                     </Col>
+
                 </Row>
             </Container>
         </footer>

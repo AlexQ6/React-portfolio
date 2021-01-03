@@ -36,7 +36,7 @@ const Carousel = (props) => {
         {
           id: 2,
           title: "Portfolio",
-          subTitle: "Personal portfolio website built using react JS",
+          subTitle: "Personal portfolio website built using React JS",
           imgSrc: portfolio,
           link: "https://alexqiang.com",
           repoLink: "",
@@ -74,7 +74,7 @@ const Carousel = (props) => {
     
       
     return (
-        <Container fluid={true}>
+        <Container fluid={true} >
           <Row className="justify-content-around">
               {makeItems(allItems)}
           </Row>
