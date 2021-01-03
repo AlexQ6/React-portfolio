@@ -44,16 +44,12 @@ const App = (params) => {
               <Link className="nav-link" to="/about">
                 About
               </Link>
-              <Link className="nav-link" to="/contact">
-                Contact
-              </Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
 
         <Route
-          path="/"
-          exact
+          exact path="/"
           render={() => (
             <HomePage
               title={home.title}
