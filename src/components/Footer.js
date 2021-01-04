@@ -10,7 +10,7 @@ function Footer() {
             <Container fluid={true}>
                 <Row className="border-top justify-content-between p-3">
                     <Col className="p-0 " >
-                        Alex Qiang
+                        Alex Qiang 
                     </Col>
 
                     <Col className="p-0  text-center" >
