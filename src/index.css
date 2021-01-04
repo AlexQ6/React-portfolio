@@ -16,6 +16,7 @@ code {
 .g-card {
   margin: 1.3em;
   width: 19em;
+  padding-bottom: 10em;
 }
 
 
@@ -30,7 +31,7 @@ code {
 .g-card-info {
   margin-top: 0.63em;
   min-height: 6.3em;
-  padding-bottom: 3rem;
+  padding-bottom: 1em;
 }
 
 
