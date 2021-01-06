@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -21,6 +22,16 @@
 
 .App-link {
   color: #61dafb;
+}
+
+canvas {
+  height: 130% !important;
+}
+
+@media screen and (max-width: 600px) {
+  canvas {
+    height: 200% !important;
+  }
 }
 
 @keyframes App-logo-spin {

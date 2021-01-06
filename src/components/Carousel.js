@@ -74,7 +74,7 @@ const Carousel = (props) => {
     
       
     return (
-        <Container fluid={true} >
+        <Container fluid={true}>
           <Row className="justify-content-around">
               {makeItems(allItems)}
           </Row>

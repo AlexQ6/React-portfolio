@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import ParticlesBg from 'particles-bg'
 import "./App.css";
 
 import Footer from "./components/Footer";
@@ -30,6 +31,7 @@ const App = (params) => {
   });
 
   return (
+  
     <BrowserRouter>
       <Container className="p-0" fluid={true}>
         <Navbar className="border-bottom" bg="transparent" expand="lg">
@@ -61,9 +63,10 @@ const App = (params) => {
         <Route path="/about" render={() => <AboutPage title={about.title} />} />
 
         <Footer />
-
-      </Container>
+      </Container>  
       
+      <ParticlesBg type="cobweb" bg={true}/>
+
     </BrowserRouter>
   );
 };
