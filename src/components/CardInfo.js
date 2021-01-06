@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useSpring, animated } from 'react-spring';
 
 function CardInfo(props) {
 
     const style = useSpring({opacity: 1, from: {opacity: 0}});
-    const cardRef = React.useRef(null);
-    React.useEffect(() => {
+    const cardRef = useRef(null);
+    useEffect(() => {
         if (cardRef.current) {      
             cardRef.current.scrollIntoView({
                 behavior: "smooth",
