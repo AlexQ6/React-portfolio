@@ -39,7 +39,7 @@ const Carousel = (props) => {
           subTitle: "Personal portfolio website built using React JS",
           imgSrc: portfolio,
           link: "https://alexqiang.com",
-          repoLink: "",
+          repoLink: "https://github.com/AlexQ6/react-portfolio",  
           selected: false,
         },
       ]);
