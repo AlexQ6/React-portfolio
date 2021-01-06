@@ -1,5 +1,5 @@
 # React portfolio
 
 
-## alexqiang.com (not hosted yet)
+## [alexqiang.com](https://www.alexqiang.com)
 
