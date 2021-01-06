@@ -9,9 +9,7 @@ function AboutPage(props) {
             <Hero title={props.title} />
 
             <Content>
-            <p>Hello, my name is Alex. I'm a full stack engineer with experience in MongoDB, PostgreSQL, React, Express JS, Node JS and Ruby on Rails.</p>
-
-            <p>I'm constantly learning new things. currently those things include gaining more experience with MongoDB, React, Express JS, and Node JS.</p>
+            <p>Hello, my name is Alex. I'm a junior full stack engineer with experience in MongoDB, PostgreSQL, React, Express JS, Node JS and Ruby on Rails.</p>
 
             <p>Current working on a website for a cafe that allows for online payment & click and collect. You can check it out <a href="https://github.com/AlexQ6/Mern-project-part-B" target="_blank" rel="noopener noreferrer">here</a>, or on the home page soon. </p>
 
