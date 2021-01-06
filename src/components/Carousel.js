@@ -17,7 +17,7 @@ const Carousel = (props) => {
           id: 0,
           title: "Taskio",
           subTitle:
-            "A retro gaming themed task tracker and to do list.\nBuilt with a partner during a hackathon, we built a express JS app with authentication and authorisation.",
+            "A retro gaming themed task tracker and to do list.\nBuilt with a partner during a hackathon, created an express JS app with authentication and authorisation.",
           imgSrc: taskio,
           link: "https://sleepy-falls-92191.herokuapp.com/home",
           repoLink: "https://github.com/AlexQ6/express_hackathon",
